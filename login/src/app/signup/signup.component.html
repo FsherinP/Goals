@@ -1,0 +1,58 @@
+<div>
+    <h2 style="text-align: center; font-size: 4ch; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Register</h2>
+    <div style="text-align: center;">
+        <form class="form">
+            <table>
+                <tr>
+                    <td>
+                        <input class="input"
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Name"
+                            [(ngModel)]="name"
+                        />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="input"
+                            type="text"
+                            id="email"
+                            name="email"
+                            placeholder="Email"
+                            [(ngModel)]="email"
+                        />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="input"
+                            type="text"
+                            id="password"
+                            name="password"
+                            placeholder="Password"
+                            [(ngModel)]="password"
+                        />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input class="input"
+                            type="text"
+                            id="confirmPassword"
+                            name="confirmPassword"
+                            placeholder="Confirm Password"
+                            [(ngModel)]="confirmPassword"
+                        />
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <div style="margin-top: 2ch;">
+            <button class="signup-button" (click) = "handleSignup()">
+                Register
+            </button>
+        </div>
+    </div>
+</div>
